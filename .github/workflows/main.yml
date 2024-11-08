@@ -34,3 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  # Job that runs a unit test.
+  test:
+    runs-on: ubunto-latest
+
+    steps:
+      - name: Runs a unit test
+        run: ci/unit-test-app.sh
+
