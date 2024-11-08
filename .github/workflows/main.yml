@@ -86,7 +86,7 @@ jobs:
         run: npm install snyk -g
   
       - name: Run snyk
-        run: snyk test app/build.gradle
+        run: snyk test --file=app/build.gradle
 
   Trivy-check:
     runs-on: ubuntu-latest
