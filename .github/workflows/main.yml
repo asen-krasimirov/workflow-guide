@@ -84,8 +84,10 @@ jobs:
 
       - name: Install Snyk with npm
         run: npm install snyk -g
-      - name: snyk test
-    
+  
+      - name: Run snyk
+        run: snyk test
+
   Trivy-check:
     runs-on: ubuntu-latest
 
